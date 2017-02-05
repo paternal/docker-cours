@@ -11,7 +11,8 @@ RUN \
     # LaTeX
     texlive-fonts-recommended texlive-lang-french texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-luatex texlive-science tipa \
     # Other tools
-    graphviz
+    graphviz \
+  && apt-get clean
 
 # Pablo
 RUN git clone https://framagit.org/lpaternault/pablo.git /usr/share/pablo
