@@ -7,7 +7,7 @@ RUN \
     # Misc tools
     git unzip wget strace locales \
     # Python
-    python3 libgit2-dev libffi-dev python3-pip \
+    python3 python3-pip \
     # Other tools
     graphviz \
   && DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends --yes \
