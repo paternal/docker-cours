@@ -1,4 +1,5 @@
 FROM debian:stretch
+LABEL maintainer "Louis Paternault <spalax+docker@gresille.org>"
 
 # Install softwares
 ARG DEBIAN_FRONTEND=noninteractive
