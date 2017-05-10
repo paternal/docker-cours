@@ -1,6 +1,7 @@
 FROM debian:stretch
 
 # Install softwares
+ARG DEBIAN_FRONTEND=noninteractive
 RUN \
   apt-get -y update \
   && DEBIAN_FRONTEND=noninteractive apt-get install --yes \
