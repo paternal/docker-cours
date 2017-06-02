@@ -5,14 +5,14 @@ LABEL maintainer "Louis Paternault <spalax+docker@gresille.org>"
 ARG DEBIAN_FRONTEND=noninteractive
 RUN \
   apt-get -y update \
-  && DEBIAN_FRONTEND=noninteractive apt-get install --yes \
+  && apt-get install --yes \
     # Misc tools
     git unzip wget strace locales \
     # Python
     python3 python3-pip \
     # Other tools
     graphviz \
-  && DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends --yes \
+  && apt-get install --no-install-recommends --yes \
     # LaTeX
     # Should I install texlive-full instead?
     # If you need more LaTeX packages, submit a pull request. It should be accepted
