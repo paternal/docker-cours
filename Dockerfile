@@ -7,17 +7,34 @@ RUN \
   apt-get -y update \
   && apt-get install --yes \
     # Misc tools
-    git unzip wget strace locales \
+    git \
+    unzip \
+    wget \
+    strace \
+    locales \
     # Python
-    python3 python3-pip \
+    python3 \
+    python3-pip \
     # Other tools
     graphviz \
   && apt-get install --no-install-recommends --yes \
     # LaTeX
     # Should I install texlive-full instead?
     # If you need more LaTeX packages, submit a pull request. It should be accepted
-    texlive-fonts-extra texlive-fonts-recommended texlive-generic-extra texlive-generic-recommended texlive-lang-french texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-luatex texlive-pstricks texlive-science \
-    ghostscript tipa lmodern \
+    texlive-fonts-extra \
+    texlive-fonts-recommended \
+    texlive-generic-extra \
+    texlive-generic-recommended \
+    texlive-lang-french \
+    texlive-latex-base \
+    texlive-latex-extra \
+    texlive-latex-recommended \
+    texlive-luatex \
+    texlive-pstricks \
+    texlive-science \
+    ghostscript \
+    tipa \
+    lmodern \
   && apt-get clean
 
 # Pablo
