@@ -32,6 +32,7 @@ RUN \
     texlive-luatex \
     texlive-pstricks \
     texlive-science \
+    latexmk \
     ghostscript \
     tipa \
     lmodern \
