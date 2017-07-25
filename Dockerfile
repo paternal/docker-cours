@@ -42,11 +42,8 @@ RUN \
 RUN git clone https://framagit.org/lpaternault/pablo.git /usr/share/pablo
 ENV TEXINPUTS :/usr/share/pablo
 
-# TODO Install with `pip3 install evariste`
-RUN \
-  git clone https://framagit.org/spalax/evariste.git /usr/evariste \
-  && cd /usr/evariste \
-  && python3 setup.py install
+# Évariste
+RUN pip3 install evariste
 
 # Set locale
 RUN locale-gen fr_FR.UTF-8
