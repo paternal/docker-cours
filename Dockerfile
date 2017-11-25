@@ -1,4 +1,4 @@
-FROM debian:stretch
+FROM svlentink/texlive-full
 LABEL maintainer "Louis Paternault <spalax+docker@gresille.org>"
 
 # Install softwares
@@ -17,25 +17,6 @@ RUN \
     python3-pip \
     # Other tools
     graphviz \
-  && apt-get install --no-install-recommends --yes \
-    # LaTeX
-    # Should I install texlive-full instead?
-    # If you need more LaTeX packages, submit a pull request. It should be accepted
-    texlive-fonts-extra \
-    texlive-fonts-recommended \
-    texlive-generic-extra \
-    texlive-generic-recommended \
-    texlive-lang-french \
-    texlive-latex-base \
-    texlive-latex-extra \
-    texlive-latex-recommended \
-    texlive-luatex \
-    texlive-pstricks \
-    texlive-science \
-    latexmk \
-    ghostscript \
-    tipa \
-    lmodern \
   && apt-get clean
 
 # Pablo
