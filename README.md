@@ -1,7 +1,7 @@
 paternal/cours
 ==============
 
-A docker image with the necessary tools to build my [course material](https://paternault.fr/pedago/cours/). I would be surprised if this image was useful to anyone but me, but who knows?
+A docker image with the necessary tools to build my [course material](https://ababsurdo.fr/pedago/cours/). I would be surprised if this image was useful to anyone but me, but who knows?
 
 ## Available tools
 
