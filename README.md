@@ -1,6 +1,9 @@
 paternal/cours
 ==============
 
+![Docker Stars](https://img.shields.io/docker/stars/paternal/cours.svg)
+![Docker Pulls](https://img.shields.io/docker/pulls/paternal/cours.svg)
+
 A docker image with the necessary tools to build my [course material](https://ababsurdo.fr/pedago/cours/). I would be surprised if this image was useful to anyone but me, but who knows?
 
 ## Available tools
