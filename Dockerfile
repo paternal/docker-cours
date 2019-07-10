@@ -1,4 +1,4 @@
-FROM svlentink/texlive-full
+FROM svlentink/texlive-with-libraries
 LABEL maintainer "Louis Paternault <spalax+docker@gresille.org>"
 
 # Install softwares
