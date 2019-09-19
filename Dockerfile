@@ -27,7 +27,8 @@ ENV TEXINPUTS :/usr/share/pablo
 RUN pip3 install evariste
 
 # Set locale
-RUN locale-gen fr_FR.UTF-8
+RUN echo "fr_FR.UTF-8" >> /etc/locale.gen
+RUN locale-gen
 ENV LANG fr_FR.UTF-8
 ENV LANGUAGE fr_FR.UTF-8
 ENV LC_ALL fr_FR.UTF-8
