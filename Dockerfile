@@ -23,8 +23,10 @@ RUN \
 RUN git clone https://framagit.org/lpaternault/pablo.git /usr/share/pablo
 ENV TEXINPUTS :/usr/share/pablo
 
-# Évariste
-RUN pip3 install evariste
+# Programmes python
+RUN python3 -m pip install \
+  evariste \
+  spix
 
 # Set locale
 RUN echo "fr_FR.UTF-8 UTF-8" >> /etc/locale.gen
