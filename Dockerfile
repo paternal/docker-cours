@@ -1,5 +1,5 @@
 FROM svlentink/texlive-with-libraries
-LABEL maintainer "Louis Paternault <spalax+docker@gresille.org>"
+LABEL maintainer "Louis Paternault <spalax@gresille.org>"
 
 # Install softwares
 ARG DEBIAN_FRONTEND=noninteractive
