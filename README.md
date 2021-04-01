@@ -13,7 +13,8 @@ A docker image with the necessary tools to build my [course material](https://ab
   - [LaTeX](https://www.tug.org/texlive/) (and a lot of LaTeX packages and fonts);
   - [pablo](https://framagit.org/lpaternault/pablo) (my custom LaTeX classes used in my course material);
   - [python3](https://packages.debian.org/stretch/python3);
-  - [evariste](https://git.framasoft.org/spalax/evariste/);
+  - [evariste](https://framagit.org/spalax/evariste/);
+  - [spix](https://framagit.org/spalax/spix/);
   - [graphviz](https://packages.debian.org/stretch/graphviz), [ghostscript](https://packages.debian.org/stretch/ghostscript).
 
 ## Usage
