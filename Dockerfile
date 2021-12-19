@@ -19,9 +19,10 @@ RUN \
     graphviz \
   && apt-get clean
 
-# Pablo
-RUN git clone https://framagit.org/lpaternault/pablo.git /usr/share/pablo
-ENV TEXINPUTS :/usr/share/pablo
+# Install my custom LaTeX classes
+RUN git config --global http.sslverify false # Can be removed when bumping to the next Debian version
+RUN git clone https://framagit.org/lpaternault/pablo.git /usr/share/texlive/texmf-dist/tex/latex/pablo
+RUN texhash
 
 # Programmes python
 RUN python3 -m pip install \
