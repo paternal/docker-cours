@@ -44,6 +44,11 @@ ENV LANGUAGE fr_FR.UTF-8
 ENV LC_ALL fr_FR.UTF-8
 RUN dpkg-reconfigure locales
 
+# Several workarounds to: https://gitlab.com/gitlab-org/gitlab-runner/-/issues/1170
+RUN echo "dash dash/sh boolean false" | debconf-set-selections
+RUN ln -sf bash /bin/sh
+RUN ln -sf bash /bin/dash
+
 # Check that everything is installed
 RUN \
   echo \
