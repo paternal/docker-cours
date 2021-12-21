@@ -22,7 +22,7 @@ RUN \
 # Install my custom LaTeX classes
 RUN git config --global http.sslverify false # Can be removed when bumping to the next Debian version
 RUN git clone https://framagit.org/lpaternault/pablo.git /usr/share/pablo/texmf-dist/tex/latex/pablo
-RUN texhash
+RUN tlmgr conf auxtrees add /usr/share/pablo/texmf-dist
 
 # Programmes python
 RUN python3 -m pip install \
