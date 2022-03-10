@@ -8,14 +8,19 @@ A docker image with the necessary tools to build my [course material](https://ab
 
 ## Available tools
 
-- It is based on a [debian stretch](https://www.debian.org/releases/stretch/).
+- It is based on a [debian testing](https://www.debian.org/releases/testing/).
 - The following tools are available:
   - [LaTeX](https://www.tug.org/texlive/) (and a lot of LaTeX packages and fonts);
-  - [pablo](https://framagit.org/lpaternault/pablo) (my custom LaTeX classes used in my course material);
-  - [python3](https://packages.debian.org/stretch/python3);
   - [evariste](https://framagit.org/spalax/evariste/);
   - [spix](https://framagit.org/spalax/spix/);
-  - [graphviz](https://packages.debian.org/stretch/graphviz), [ghostscript](https://packages.debian.org/stretch/ghostscript).
+  - [ghostscript](https://packages.debian.org/testing/ghostscript).
+  - [graphviz](https://packages.debian.org/testing/graphviz),
+  - [libreoffice](https://packages.debian.org/testing/libreoffice);
+  - [pablo](https://framagit.org/lpaternault/pablo) (my custom LaTeX classes used in my course material);
+  - [pandoc](https://packages.debian.org/testing/pandoc);
+  - [pdftk](https://packages.debian.org/testing/pdftk);
+  - [python3](https://packages.debian.org/testing/python3);
+  - [wget](https://packages.debian.org/testing/wget);
 
 ## Usage
 
