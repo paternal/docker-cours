@@ -15,6 +15,7 @@ RUN \
     python3-pip \
     wget \
     ghostscript \
+    xz-utils \
   && apt clean
 
 # Allow Imagemagick to convert PDF to PNG
