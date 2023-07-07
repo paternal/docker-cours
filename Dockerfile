@@ -8,6 +8,7 @@ RUN \
   && apt install --yes --no-install-recommends \
     git \
     graphviz \
+    imagemagick \
     libreoffice \
     locales \
     pandoc \
