@@ -25,7 +25,7 @@ RUN sed -i \
     /etc/ImageMagick-6/policy.xml
 
 # Programmes python
-RUN python3 -m pip install \
+RUN python3 -m pip install --break-system-packages \
   evariste \
   spix
 
