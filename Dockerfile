@@ -29,17 +29,10 @@ RUN python3 -m pip install --break-system-packages \
   evariste \
   spix
 
-# Install my custom LaTeX classes
+# Install my custom LaTeX classes and download some fonts
 RUN git clone https://framagit.org/lpaternault/pablo.git /usr/share/pablo/texmf-dist/tex/latex/pablo
 RUN tlmgr conf auxtrees add /usr/share/pablo/texmf-dist
-
-# Add numworks fonts
-RUN ( \
-    cd /usr/local/share/fonts/ && \
-    wget https://www.numworks.com/shared/pages/blog/numworks-keys-font/numworks-keys-font-351dbb06.zip && \
-    unzip numworks-keys-font-351dbb06.zip && \
-    rm numworks-keys-font-351dbb06.zip \
-    )
+RUN bash /usr/share/pablo/texmf-dist/tex/latex/pablo/fonts/download.sh
 
 # Set the locale
 RUN echo "fr_FR.UTF-8 UTF-8" >> /etc/locale.gen
