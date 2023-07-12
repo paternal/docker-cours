@@ -30,9 +30,12 @@ RUN python3 -m pip install --break-system-packages \
   spix
 
 # Install my custom LaTeX classes and download some fonts
-RUN git clone https://framagit.org/lpaternault/pablo.git /usr/share/pablo/texmf-dist/tex/latex/pablo
-RUN tlmgr conf auxtrees add /usr/share/pablo/texmf-dist
-RUN bash /usr/share/pablo/texmf-dist/tex/latex/pablo/fonts/download.sh
+RUN \
+  cd /usr/local/texlive/texmf-local && \
+  git clone https://framagit.org/lpaternault/pablo.git tex/latex/pablo && \
+  bash tex/latex/pablo/fonts/download.sh && \
+  mv tex/latex/pablo/fonts/truetype fonts/ && \
+  texhash
 
 # Set the locale
 RUN echo "fr_FR.UTF-8 UTF-8" >> /etc/locale.gen
