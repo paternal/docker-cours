@@ -16,7 +16,7 @@ A docker image with the necessary tools to build my [course material](https://ab
   - [ghostscript](https://packages.debian.org/testing/ghostscript).
   - [graphviz](https://packages.debian.org/testing/graphviz),
   - [libreoffice](https://packages.debian.org/testing/libreoffice);
-  - [pablo](https://framagit.org/lpaternault/pablo) (my custom LaTeX classes used in my course material);
+  - [pablo](https://forge.apps.education.fr/paternaultlouis/pablo) (my custom LaTeX classes used in my course material);
   - [pandoc](https://packages.debian.org/testing/pandoc);
   - [pdftk](https://packages.debian.org/testing/pdftk);
   - [python3](https://packages.debian.org/testing/python3);

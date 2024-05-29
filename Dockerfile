@@ -32,7 +32,7 @@ RUN python3 -m pip install --break-system-packages \
 # Install my custom LaTeX classes and download some fonts
 RUN \
   cd /usr/local/texlive/texmf-local && \
-  git clone https://framagit.org/lpaternault/pablo.git tex/latex/pablo && \
+  git clone https://forge.apps.education.fr/paternaultlouis/pablo.git tex/latex/pablo && \
   bash tex/latex/pablo/fonts/download.sh && \
   mv tex/latex/pablo/fonts/truetype fonts/ && \
   texhash
