@@ -27,6 +27,8 @@ RUN sed -i \
 # Programmes python
 RUN python3 -m pip install --break-system-packages \
   evariste \
+  pdfautonup \
+  pdfimpose \
   spix
 
 # Install my custom LaTeX classes and download some fonts

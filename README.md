@@ -18,6 +18,8 @@ A docker image with the necessary tools to build my [course material](https://ab
   - [libreoffice](https://packages.debian.org/testing/libreoffice);
   - [pablo](https://forge.apps.education.fr/paternaultlouis/pablo) (my custom LaTeX classes used in my course material);
   - [pandoc](https://packages.debian.org/testing/pandoc);
+  - [pdfautonup](https://framagit.org/spalax/pdfautonup/);
+  - [pdfimpose](https://framagit.org/spalax/pdfimpose/);
   - [pdftk](https://packages.debian.org/testing/pdftk);
   - [python3](https://packages.debian.org/testing/python3);
   - [wget](https://packages.debian.org/testing/wget);
